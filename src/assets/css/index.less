@@ -1,0 +1,78 @@
+@main-color: #409eff;
+@nb: #848883;
+@main-color-bg: #fcfcfc;
+
+body {
+  background-color: #fff;
+  cursor: url("~images/mouse.ico"), auto;
+  /*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
+  color: #666;
+  overflow-y: auto;
+
+  ::-webkit-scrollbar {
+    width: 2px; /*滚动条宽度*/
+    height: 2px; /*滚动条高度*/
+  }
+
+  /*定义滚动条轨道 内阴影+圆角*/
+
+  ::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px; /*滚动条的背景区域的圆角*/
+    background-color: #fffd7e; /*滚动条的背景颜色*/
+  }
+
+  /*定义滑块 内阴影+圆角*/
+
+  ::-webkit-scrollbar-thumb {
+    border-radius: 50%; /*滚动条的圆角*/
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: #f4a0ff; /*滚动条的背景颜色*/
+  }
+
+  ul, li {
+    list-style: none;
+  }
+
+  .el-link {
+    vertical-align: baseline;
+  }
+
+  .el-cascader-panel {
+    max-height: 450px;
+  }
+
+  .s-c {
+    color: @main-color;
+  }
+
+  .pr {
+    position: relative;
+  }
+
+  .desc-title {
+    font-family: FzCzyksj, sans-serif;
+    color: @main-color;
+  }
+
+  .desc-row {
+    padding: 0 20px;
+
+    h3, p {
+      font-family: FzCzyksj, serif;
+    }
+
+    p {
+      font-size: 16px;
+    }
+
+    h3 {
+      font-size: 20px;
+    }
+  }
+}
+
+.shadow-br() {
+  box-shadow: 0 2px 12px 0 rgba(13, 13, 13, 0.16);
+  border-radius: 12px;
+}

@@ -1,0 +1,429 @@
+{
+  "status": 1,
+  "data": [
+    {
+      "command": "appwiz.cpl",
+      "desc": "程序和功能"
+    },
+    {
+      "command": "ipconfig",
+      "desc": "ip信息查询"
+    },
+    {
+      "command": "calc",
+      "desc": "启动计算器"
+    },
+    {
+      "command": "cleanmgr",
+      "desc": "打开磁盘清理工具"
+    },
+    {
+      "command": "cmd.exe",
+      "desc": "CMD命令提示符"
+    },
+    {
+      "command": "shutdown -s -t 600",
+      "desc": "600秒后关机"
+    },
+    {
+      "command": "shutdown -r -t 600",
+      "desc": "600秒后重启"
+    },
+    {
+      "command": "shutdown -a",
+      "desc": "取消定时关机"
+    },
+    {
+      "command": "CompMgmtLauncher",
+      "desc": "计算机管理"
+    },
+    {
+      "command": "compmgmt.msc",
+      "desc": "计算机管理"
+    },
+    {
+      "command": "credwiz",
+      "desc": "备份或还原储存的用户名和密码"
+    },
+    {
+      "command": "control",
+      "desc": "控制面版"
+    },
+    {
+      "command": "dcomcnfg",
+      "desc": "打开系统组件服务"
+    },
+    {
+      "command": "devmgmt.msc",
+      "desc": "设备管理器"
+    },
+    {
+      "command": "desk.cpl",
+      "desc": "屏幕分辨率"
+    },
+    {
+      "command": "dfrgui",
+      "desc": "优化驱动器"
+    },
+    {
+      "command": "dialer",
+      "desc": "电话拨号程序"
+    },
+    {
+      "command": "diskmgmt.msc",
+      "desc": "磁盘管理"
+    },
+    {
+      "command": "dvdplay",
+      "desc": "DVD播放器"
+    },
+    {
+      "command": "dxdiag",
+      "desc": "检查DirectX信息"
+    },
+    {
+      "command": "eudcedit",
+      "desc": "造字程序"
+    },
+    {
+      "command": "eventvwr",
+      "desc": "事件查看器"
+    },
+    {
+      "command": "explorer",
+      "desc": "打开资源管理器"
+    },
+    {
+      "command": "Firewall.cpl",
+      "desc": "Windows防火墙"
+    },
+    {
+      "command": "fsmgmt.msc",
+      "desc": "共享文件夹管理器"
+    },
+    {
+      "command": "gpedit.msc",
+      "desc": "组策略"
+    },
+    {
+      "command": "hdwwiz.cpl",
+      "desc": "设备管理器"
+    },
+    {
+      "command": "inetcpl.cpl",
+      "desc": "Internet属性"
+    },
+    {
+      "command": "intl.cpl",
+      "desc": "区域"
+    },
+    {
+      "command": "iexpress",
+      "desc": "木马捆绑工具，系统自带"
+    },
+    {
+      "command": "joy.cpl",
+      "desc": "游戏控制器"
+    },
+    {
+      "command": "logoff",
+      "desc": "注销命令"
+    },
+    {
+      "command": "lpksetup",
+      "desc": "语言包安装/删除向导，安装向导会提示下载语言包"
+    },
+    {
+      "command": "lusrmgr.msc",
+      "desc": "本机用户和组"
+    },
+    {
+      "command": "main.cpl",
+      "desc": "鼠标属性"
+    },
+    {
+      "command": "mmsys.cpl",
+      "desc": "声音"
+    },
+    {
+      "command": "mem.exe",
+      "desc": "显示内存使用情况（如果直接运行无效，可以先管理员身份运行命令提示符，在命"
+    },
+    {
+      "command": "mmc",
+      "desc": "打开控制台"
+    },
+    {
+      "command": "mobsync",
+      "desc": "同步命令"
+    },
+    {
+      "command": "Msconfig.exe",
+      "desc": "系统配置实用程序"
+    },
+    {
+      "command": "msdt",
+      "desc": "微软支持诊断工具"
+    },
+    {
+      "command": "msinfo32",
+      "desc": "系统信息"
+    },
+    {
+      "command": "mspaint",
+      "desc": "画图"
+    },
+    {
+      "command": "Msra",
+      "desc": "Windows远程协助"
+    },
+    {
+      "command": "mstsc",
+      "desc": "远程桌面连接"
+    },
+    {
+      "command": "NAPCLCFG.MSC",
+      "desc": "客户端配置"
+    },
+    {
+      "command": "ncpa.cpl",
+      "desc": "网络连接"
+    },
+    {
+      "command": "narrator",
+      "desc": "屏幕“讲述人”"
+    },
+    {
+      "command": "Netplwiz",
+      "desc": "高级用户帐户控制面板，设置登陆安全相关的选项"
+    },
+    {
+      "command": "netstat ",
+      "desc": " an(TC)命令检查接口"
+    },
+    {
+      "command": "notepad",
+      "desc": "打开记事本"
+    },
+    {
+      "command": "Nslookup",
+      "desc": "IP地址侦测器"
+    },
+    {
+      "command": "odbcad32",
+      "desc": "ODBC数据源管理器"
+    },
+    {
+      "command": "OptionalFeatures",
+      "desc": "打开“打开或关闭Windows功能”对话框"
+    },
+    {
+      "command": "osk",
+      "desc": "打开屏幕键盘"
+    },
+    {
+      "command": "perfmon.msc",
+      "desc": "计算机性能监测器"
+    },
+    {
+      "command": "perfmon",
+      "desc": "计算机性能监测器"
+    },
+    {
+      "command": "PowerShell",
+      "desc": "提供强大远程处理能力"
+    },
+    {
+      "command": "printmanagement.msc",
+      "desc": "打印管理"
+    },
+    {
+      "command": "powercfg.cpl",
+      "desc": "电源选项"
+    },
+    {
+      "command": "psr",
+      "desc": "问题步骤记录器"
+    },
+    {
+      "command": "Rasphone",
+      "desc": "网络连接"
+    },
+    {
+      "command": "Recdisc",
+      "desc": "创建系统修复光盘"
+    },
+    {
+      "command": "Resmon",
+      "desc": "资源监视器"
+    },
+    {
+      "command": "Rstrui",
+      "desc": "系统还原"
+    },
+    {
+      "command": "regedit.exe",
+      "desc": "注册表"
+    },
+    {
+      "command": "regedt32",
+      "desc": "注册表编辑器"
+    },
+    {
+      "command": "rsop.msc",
+      "desc": "组策略结果集"
+    },
+    {
+      "command": "sdclt",
+      "desc": "备份状态与配置，就是查看系统是否已备份"
+    },
+    {
+      "command": "secpol.msc",
+      "desc": "本地安全策略"
+    },
+    {
+      "command": "services.msc",
+      "desc": "本地服务设置"
+    },
+    {
+      "command": "sfc /scannow",
+      "desc": "扫描错误并复原/windows文件保护"
+    },
+    {
+      "command": "sfc.exe",
+      "desc": "系统文件检查器"
+    },
+    {
+      "command": "shrpubw",
+      "desc": "创建共享文件夹"
+    },
+    {
+      "command": "sigverif",
+      "desc": "文件签名验证程序"
+    },
+    {
+      "command": "slui",
+      "desc": "Windows激活，查看系统激活信息"
+    },
+    {
+      "command": "slmgr.vbs -dlv",
+      "desc": "显示详细的许可证信息"
+    },
+    {
+      "command": "slmgr.vbs -dli",
+      "desc": "显示许可证信息"
+    },
+    {
+      "command": "slmgr.vbs -xpr",
+      "desc": "当前许可证截止日期"
+    },
+    {
+      "command": "slmgr.vbs -dti",
+      "desc": "显示安装ID 以进行脱机激"
+    },
+    {
+      "command": "slmgr.vbs -ipk",
+      "desc": "(Product Key)安装产品密钥"
+    },
+    {
+      "command": "slmgr.vbs -ato",
+      "desc": "激活Windows"
+    },
+    {
+      "command": "slmgr.vbs -cpky",
+      "desc": "从注册表中清除产品密钥（防止泄露引起的攻击）"
+    },
+    {
+      "command": "slmgr.vbs -ilc",
+      "desc": "(License file)安装许可证"
+    },
+    {
+      "command": "slmgr.vbs -upk",
+      "desc": "卸载产品密钥"
+    },
+    {
+      "command": "slmgr.vbs -skms",
+      "desc": "(command[ort] )批量授权"
+    },
+    {
+      "command": "snippingtool",
+      "desc": "截图工具，支持无规则截图"
+    },
+    {
+      "command": "soundrecorder",
+      "desc": "录音机，没有录音时间的限制"
+    },
+    {
+      "command": "StikyNot",
+      "desc": "便笺"
+    },
+    {
+      "command": "sysdm.cpl",
+      "desc": "系统属性"
+    },
+    {
+      "command": "sysedit",
+      "desc": "系统配置编辑器"
+    },
+    {
+      "command": "syskey",
+      "desc": "系统加密，一旦加密就不能解开，保护系统的双重密码"
+    },
+    {
+      "command": "taskmgr",
+      "desc": "任务管理器（旧版）"
+    },
+    {
+      "command": " taskschd.msc",
+      "desc": "任务计划程序"
+    },
+    {
+      "command": "timedate.cpl",
+      "desc": "日期和时间"
+    },
+    {
+      "command": "UserAccountControlSettings",
+      "desc": "用户账户控制设置"
+    },
+    {
+      "command": "utilman",
+      "desc": "辅助工具管理器"
+    },
+    {
+      "command": "wf.msc",
+      "desc": "高级安全Windows防火墙"
+    },
+    {
+      "command": "WFS",
+      "desc": "Windows传真和扫描"
+    },
+    {
+      "command": "wiaacmgr",
+      "desc": "扫描仪和照相机向导"
+    },
+    {
+      "command": "winver",
+      "desc": "关于Windows"
+    },
+    {
+      "command": "wmimgmt.msc",
+      "desc": "打开windows管理体系结构(WMI)"
+    },
+    {
+      "command": "write",
+      "desc": "写字板"
+    },
+    {
+      "command": "wscui.cpl",
+      "desc": "操作中心"
+    },
+    {
+      "command": "wscript",
+      "desc": "windows脚本宿主设置"
+    },
+    {
+      "command": "wuapp",
+      "desc": "Windows更新"
+    }
+  ]
+}
