@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-# electron-vue-example
+# vue-electron-personal-collection
 
 ## Project setup
 ```
@@ -8,22 +7,17 @@ npm install
 
 ### Compiles and hot-reloads for development
 ```
-npm run serve
+vue-cli-service electron:serve
 ```
 
 ### Compiles and minifies for production
 ```
-npm run build
+vue-cli-service electron:build
 ```
 
 ### Lints and fixes files
 ```
-npm run lint
+vue-cli-service lint
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
-=======
-# vue-electron-personal-collection
-a vue-electron project
->>>>>>> 206605a9b25bc8b2e3ca196622a83bb646e8fdf1
+个人vue-electron项目，整合之前捣鼓的一些小玩意，技术栈使用vue全家桶（vue-router,vuex,axios,vue-aplayer,element-ui）,一些功能在页面中有介绍，以下是部分截图
