@@ -1,4 +1,4 @@
-# electron-vue-example
+# vue-electron-personal-collection
 
 ## Project setup
 ```
@@ -20,5 +20,4 @@ vue-cli-service electron:build
 vue-cli-service lint
 ```
 
-# vue-electron-personal-collection
-
+个人vue-electron项目，整合之前捣鼓的一些小玩意，技术栈使用vue全家桶（vue-router,vuex,axios,vue-aplayer,element-ui）,一些功能在页面中有介绍，以下是部分截图
