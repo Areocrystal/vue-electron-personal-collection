@@ -1,4 +1,3 @@
-HEAD
 # electron-vue-example
 
 ## Project setup
@@ -21,9 +20,5 @@ vue-cli-service electron:build
 vue-cli-service lint
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
-=======
 # vue-electron-personal-collection
-a vue-electron project
 
