@@ -15,22 +15,22 @@ export const setContextmenu = () => {
         role: 'paste'
     }));
     menu.append(new MenuItem({type: 'separator'}));
-    menu.append(new MenuItem({
-        label: '切换开发者工具(toggleDevTools)',
-        accelerator: (function () {
-            if (process.platform === 'darwin') {
-                return 'Alt+Command+I'
-            } else {
-                return 'Ctrl+Shift+I'
-            }
-        })(),
-        click: function (item, focusedWindow) {
-            console.log(item);
-            if (focusedWindow) {
-                focusedWindow.toggleDevTools();
-            }
-        },
-    },));
+    // menu.append(new MenuItem({
+    //     label: '切换开发者工具(toggleDevTools)',
+    //     accelerator: (function () {
+    //         if (process.platform === 'darwin') {
+    //             return 'Alt+Command+I'
+    //         } else {
+    //             return 'Ctrl+Shift+I'
+    //         }
+    //     })(),
+    //     click: function (item, focusedWindow) {
+    //         console.log(item);
+    //         if (focusedWindow) {
+    //             focusedWindow.toggleDevTools();
+    //         }
+    //     },
+    // },));
     (window || global).addEventListener('contextmenu', function (e) {
         e.preventDefault();
         menu.popup(remote.getCurrentWindow());
