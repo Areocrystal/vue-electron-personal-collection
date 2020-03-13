@@ -12,8 +12,7 @@
 
 <script>
     import locateBase64 from 'images/locate.jpg';
-    import "ol/ol.css";
-    import {Map, View} from "ol";
+    import {Map, View} from 'ol';
     import Point from 'ol/geom/Point';
     import {Tile as TileLayer, Vector as VectorLayer} from 'ol/layer';
     import Feature from 'ol/Feature';
@@ -21,6 +20,7 @@
     import {Vector as VectorSource} from "ol/source";
     import {Style as OlStyle, Stroke as OlStroke, Fill, Text as OlText, Icon as OlIcon} from "ol/style";
     import XYZ from 'ol/source/XYZ';
+    import "ol/ol.css";
     // import rippleEffect from '@/plugin/ripple-effect/RippleEffect.min';
 
     export default {

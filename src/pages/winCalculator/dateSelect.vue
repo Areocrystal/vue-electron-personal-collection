@@ -1,7 +1,7 @@
 <template>
     <div>
         <p>{{desc}}</p>
-        <el-select v-model="value" placeholder="请选择" style="width: 100px;" @change="emitDate(value)">
+        <el-select v-model="value" placeholder="请选择" style="width: 100px;" @change="emitDate(value)" value="">
             <el-option v-for="(item, key) in dateList"
                        :key="key"
                        :label="item"
@@ -27,6 +27,9 @@
             }
         },
         methods: {
+            /*
+            * @v 日期
+            */
             emitDate(v) {
                 this.$emit('getSelected', v);
             }
