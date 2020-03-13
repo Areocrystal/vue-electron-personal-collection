@@ -173,7 +173,7 @@ const template = [
     label: '视图(view)',
     submenu: [
       {label: '重新加载(reload)', role: 'reload'},
-      {label: '强制重新加载(forcereload)', role: 'forcereload'},
+      // {label: '强制重新加载(forcereload)', role: 'forcereload'},
       // {
       //   label: '切换开发者工具(toggleDevTools)',
       //   accelerator: (function () {

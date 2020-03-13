@@ -33,13 +33,13 @@
             <div class="scope-btn">
                 <el-button circle type="primary" icon="el-icon-zoom-in" @click="changeScale(1)"></el-button>
                 <el-button circle type="primary" icon="el-icon-zoom-out" @click="changeScale(-1)"></el-button>
-                <el-button round type="primary" @click.prevent.stop="rotateLeft">逆时针旋转</el-button>
-                <el-button round type="primary" @click.prevent.stop="rotateRight">顺时针旋转</el-button>
+                <el-button round type="primary" @click.prevent.stop="rotateLeft" size="mini">逆时针旋转</el-button>
+                <el-button round type="primary" @click.prevent.stop="rotateRight" size="mini">顺时针旋转</el-button>
             </div>
             <!-- 确认上传按钮 -->
             <div class="upload-btn">
                 <!-- <el-button type="primary" @click="uploadImg('blob')">上传</el-button> -->
-                <el-button type="primary" icon="el-icon-success" :disabled="isDisabled" @click="uploadImg('base64')">
+                <el-button type="primary" icon="el-icon-success" :disabled="isDisabled" @click="uploadImg('base64')" size="mini">
                     确定
                 </el-button>
             </div>
