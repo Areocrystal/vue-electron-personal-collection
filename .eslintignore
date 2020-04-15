@@ -1,4 +1,5 @@
 /src/plugin/*/*.min.js
+/src/pages/winCalculator/dateCalc.vue
 /node_modules/
 /dist_electron/
 /test/*/*.spec.js

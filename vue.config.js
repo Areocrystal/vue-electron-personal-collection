@@ -75,6 +75,15 @@ module.exports = {
         },
       },
       {
+        test: /\.(js|vue)$/,
+        loader: 'eslint-loader',
+        enforce: 'pre',
+        include: [resolve('./src')],
+        options: {
+          fix: true
+        }
+      },
+      {
         test: /\.worker\.js$/,
         use: {
           loader: 'worker-loader',
