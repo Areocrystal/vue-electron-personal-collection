@@ -1,6 +1,7 @@
 'use strict';
 
 import {app, protocol, BrowserWindow, ipcMain, screen, Menu, dialog, Tray} from 'electron';
+
 import {createProtocol, installVueDevtools} from 'vue-cli-plugin-electron-builder/lib';
 
 const isDevelopment = process.env.NODE_ENV !== 'production';

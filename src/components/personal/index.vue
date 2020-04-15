@@ -3,7 +3,7 @@
 		<div slot="personal" class="second-includer">
 			<top-layout :showBack="true"></top-layout>
 			<keep-alive exclude="dicePicture">
-				<router-view />
+				<router-view></router-view>
 			</keep-alive>
 			<template v-if="$route.name === 'personal'">
 				<h2 class="desc-title">简要描述</h2>

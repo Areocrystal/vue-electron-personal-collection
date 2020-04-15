@@ -27,6 +27,7 @@ import {FontAwesomeIcon} from '@fortawesome/vue-fontawesome';
 import store from 'store/index';
 import VueRibbonEffect from '@/plugin/vue-ribbon-effect';
 import VueTransformEffect from '@/plugin/vue-transform-effect';
+
 import 'util/directive';
 
 Vue.config.productionTip = false;

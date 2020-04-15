@@ -3,7 +3,7 @@
 		<div slot="littleFunc">
 			<top-layout :showBack="true"></top-layout>
 			<keep-alive>
-				<router-view />
+				<router-view></router-view>
 			</keep-alive>
 			<template v-if="pathName === 'littleFunc'">
 				<h2 class="desc-title">简要描述</h2>

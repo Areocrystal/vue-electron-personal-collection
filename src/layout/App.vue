@@ -4,7 +4,7 @@
 			<audio-player></audio-player>
 			<vue-ribbon-effect v-show="showEffect"></vue-ribbon-effect>
 			<keep-alive>
-				<router-view />
+				<router-view></router-view>
 			</keep-alive>
 		</div>
 	</div>

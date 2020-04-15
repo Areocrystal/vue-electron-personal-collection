@@ -30,7 +30,7 @@
 			element-loading-text="努力获取中……"
 			element-loading-spinner="el-icon-loading"
 			ref="aPlayer"
-		/>
+		></aplayer>
 	</div>
 </template>
 
