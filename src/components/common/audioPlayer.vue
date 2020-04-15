@@ -106,8 +106,8 @@ export default {
 
 	.update-songs {
 		position: fixed;
-		left: 0;
-		bottom: calc(50% - 6px);
+		right: calc(20% - 6px);
+		bottom: 6px;
 		z-index: 99;
 		opacity: 0.9;
 	}
