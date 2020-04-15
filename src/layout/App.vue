@@ -45,6 +45,7 @@ export default {
 					log: true,
 				})
 		);
+		global.addEventListener('resize', () => this.$store.commit('CHANGE_FOLD'));
 	},
 	computed: {
 		showEffect() {

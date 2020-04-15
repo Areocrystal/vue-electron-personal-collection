@@ -9,6 +9,7 @@ const state = {
 	menuIndex: '1',
 	showAside: true,
 	showEffect: true, //是否展示特效
+	shouldFold: false, //是否响应式折叠
 };
 
 const mutations = {
@@ -23,6 +24,9 @@ const mutations = {
 	},
 	TOGGLE_EFFECT(state) {
 		state.showEffect = !state.showEffect;
+	},
+	CHANGE_FOLD(state) {
+		state.shouldFold = global.innerWidth < 768;
 	},
 };
 

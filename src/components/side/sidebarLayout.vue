@@ -6,7 +6,12 @@
 	>
 		<el-aside v-show="showAside" :width="isFold ? 'auto' : '200px'">
 			<author :isHide="isFold" />
-			<el-menu :default-active="menuIndex" background-color="transparent" :collapse="isFold">
+			<el-menu
+				:default-active="menuIndex"
+				:collapse="isFold"
+				background-color="#fff"
+				text-color="#666"
+			>
 				<el-menu-item index="1">
 					<template slot="title">
 						<font-awesome-icon icon="home" />&nbsp;
@@ -73,14 +78,6 @@ export default {
 	components: {
 		author,
 	},
-	mounted() {
-		global.addEventListener('resize', () => (this.isFold = global.innerWidth < 768));
-	},
-	data() {
-		return {
-			isFold: false,
-		};
-	},
 	methods: {
 		changeHandler(v) {
 			this.$store.commit('EDIT_METANAME', breadcrumbNames[v].meta);
@@ -92,6 +89,9 @@ export default {
 		},
 		menuIndex() {
 			return this.$store.state.menuIndex;
+		},
+		isFold() {
+			return this.$store.state.shouldFold;
 		},
 	},
 	directives: {

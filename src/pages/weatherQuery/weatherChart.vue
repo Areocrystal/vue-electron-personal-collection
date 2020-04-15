@@ -115,7 +115,7 @@ export default {
 			});
 			let wChart = Charts.init(this.$refs.chartBox);
 			wChart.setOption({
-				backgroundColor: new Charts.graphic.LinearGradient(1, 0.8, 0.6, 0.5, [
+				backgroundColor: new Charts.graphic.LinearGradient(1, 0.7, 0.6, 0.5, [
 					{
 						offset: 0,
 						color: '#404040',

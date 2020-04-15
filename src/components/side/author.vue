@@ -1,5 +1,5 @@
 <template>
-	<div class="author-wrapper" v-show="isShow">
+	<div class="author-wrapper" v-show="!isFold">
 		<el-avatar
 			style="vertical-align: middle;"
 			src="https://avatars1.githubusercontent.com/u/29609342?s=460&v=4"
@@ -12,15 +12,9 @@
 <script>
 export default {
 	name: 'author',
-	props: ['isHide'],
-	data() {
-		return {
-			isShow: true,
-		};
-	},
-	watch: {
-		isHide(newVal) {
-			this.isShow = !newVal;
+	computed: {
+		isFold() {
+			return this.$store.state.shouldFold;
 		},
 	},
 };
