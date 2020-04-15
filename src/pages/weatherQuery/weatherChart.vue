@@ -75,7 +75,7 @@ export default {
 		drawChart() {
 			const [titleText, dayData, nightData, city, reporttime] = this.handlerData();
 			const formatText = (a, b) => `风力：${a}级，风向：${b}`;
-			const formatSeries = (name, data) => ({
+			const formatSeries = (name, data, color) => ({
 				name,
 				data,
 				type: 'line',
@@ -89,9 +89,18 @@ export default {
 					},
 				},
 				itemStyle: {
-					shadowBlur: 10,
-					shadowColor: 'rgba(255,250,124, .5)',
+					shadowBlur: 5,
+					shadowColor: 'rgba(38,35,19,0.5)',
 					shadowOffsetY: 5,
+					smooth: true,
+					symbol: 'circle', //折线点设置为实心点
+					symbolSize: 0.5, //折线点的大小
+					normal: {
+						color, //折线点的颜色
+						lineStyle: {
+							color, //折线的颜色
+						},
+					},
 					color: new Charts.graphic.RadialGradient(0.4, 0.3, 1, [
 						{
 							offset: 0,
@@ -99,7 +108,7 @@ export default {
 						},
 						{
 							offset: 1,
-							color: '#409eff',
+							color,
 						},
 					]),
 				},
@@ -109,11 +118,15 @@ export default {
 				backgroundColor: new Charts.graphic.LinearGradient(1, 0.8, 0.6, 0.5, [
 					{
 						offset: 0,
-						color: '#409eff',
+						color: '#404040',
+					},
+					{
+						offset: 0.6,
+						color: '#fff',
 					},
 					{
 						offset: 1,
-						color: '#fff',
+						color: '#c2d2ff',
 					},
 				]),
 				title: {
@@ -197,7 +210,7 @@ export default {
 					top: '15%',
 					containLabel: true, //保留文字距离
 				},
-				series: [formatSeries('白天', dayData), formatSeries('夜晚', nightData)],
+				series: [formatSeries('白天', dayData, '#409eff'), formatSeries('夜晚', nightData, '#000')],
 			});
 		},
 	},
