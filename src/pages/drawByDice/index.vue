@@ -98,7 +98,7 @@
 						</div>
 					</el-upload>
 				</el-tooltip>
-				<el-dialog :visible.sync="dialogVisible" width="60%" center>
+				<el-dialog :visible.sync="dialogVisible" width="60%" center="">
 					<img style="width: 100%;" :src="dialogImageUrl" alt="" />
 					<div slot="title">
 						<span class="s-c" style="font-size: 24px;">缩略图放大</span>

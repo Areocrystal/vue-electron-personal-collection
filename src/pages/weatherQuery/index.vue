@@ -1,14 +1,14 @@
 <template>
 	<div class="weather-include">
 		<el-row v-loading="loadingData" element-loading-text="努力加载中……">
-			<el-col :xs="9" :md="8" :lg="7" style="text-align: left;">
+			<el-col :xs="10" :md="8" :lg="7" style="text-align: left;">
 				<h4 style="text-align: left;">范围选择</h4>
 				<el-radio-group v-model="regionPrecision" @change="precisionChange" class="b-s">
 					<el-radio :label="false">定位到市</el-radio>
 					<el-radio :label="true" @click.native.once="locatePrecision">定位到区</el-radio>
 				</el-radio-group>
 			</el-col>
-			<el-col :xs="15" :md="16" :lg="17">
+			<el-col :xs="14" :md="16" :lg="17">
 				<h4 style="text-align: left;">省市区选择</h4>
 				<el-cascader
 					v-model="selectedOptions"
