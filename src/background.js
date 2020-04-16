@@ -4,6 +4,8 @@ import {app, protocol, BrowserWindow, ipcMain, screen, Menu, dialog, Tray} from 
 
 import {createProtocol, installVueDevtools} from 'vue-cli-plugin-electron-builder/lib';
 
+import electronLog from 'electron-log';
+
 const isDevelopment = process.env.NODE_ENV !== 'production';
 
 // Keep a global reference of the window object, if you don't, the window will
@@ -18,6 +20,7 @@ function createWindow() {
 	let size = screen.getPrimaryDisplay().workAreaSize;
 	let width = parseInt(size.width * 0.45);
 	let height = parseInt(size.height * 0.45);
+	electronLog.info('CreateWindow!');
 	win = new BrowserWindow({
 		width,
 		height,
