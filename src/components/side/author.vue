@@ -28,7 +28,7 @@ export default {
 
 	.avatar-name {
 		background-image: -webkit-linear-gradient(
-			135deg,
+			120deg,
 			#1896db,
 			#f45c0c 10%,
 			#d733c5 20%,
