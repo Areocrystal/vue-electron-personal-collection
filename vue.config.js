@@ -79,6 +79,7 @@ module.exports = {
 				loader: 'eslint-loader',
 				enforce: 'pre',
 				include: [resolve('./src')],
+				exclude: [resolve('./src/pages/winCalculator/dateCalc.vue')],
 				options: {
 					fix: true,
 				},

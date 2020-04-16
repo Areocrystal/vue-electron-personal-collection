@@ -115,7 +115,7 @@ Vue.filter('ancient-format', function (value) {
 	}年${landList[getMonth(dateVal)]}月`;
 });
 
-//只用执行一次
+// 双指针法计算所有天干地支
 // const skyLand = () => {
 //     const skyList = '甲、乙、丙、丁、戊、己、庚、辛、壬、癸'.split('、'),
 //         landList = '子、丑、寅、卯、辰、巳、午、未、申、酉、戌、亥'.split('、');
