@@ -40,3 +40,4 @@ vue-cli-service lint
 ![introduction2](https://github.com/Areocrystal/vue-electron-personal-collection/blob/master/introduction/2.PNG "随机抽人")
 ![introduction3](https://github.com/Areocrystal/vue-electron-personal-collection/blob/master/introduction/3.PNG "windows cmd指令大全")
 ![introduction4](https://github.com/Areocrystal/vue-electron-personal-collection/blob/master/introduction/4.PNG "骰子作图")
+![introduction5](https://github.com/Areocrystal/vue-electron-personal-collection/blob/master/introduction/5.PNG "天气预报")
