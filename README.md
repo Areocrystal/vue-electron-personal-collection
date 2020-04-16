@@ -23,13 +23,13 @@ vue-cli-service lint
 ```
 
 #####个人vue-electron项目，整合之前捣鼓的一些玩意，技术栈使用vue全家桶（vue-router、vuex、axios、vue-aplayer、element-ui、animate.css）+electron,包括实现音乐播放器、随机抽人、天气预报、计算器、cmd指令大全等，页面中也有介绍。
-部分技术栈：
+部分技术栈介绍：
 * **1**.animate.css实现动画效果；
 * **2**.自主封装vue动画插件；
-* **3**.vue-avue-aplayer实现音乐播放器；
+* **3**.vue-aplayer实现左下角音乐播放器；
 * **4**.vue-cropper实现骰子中图片裁剪；
 * **5**.web-worker用于在随机抽人中计算；
-* **6**.datefns用于日期计算器中操作；
+* **6**.date-fns用于在日期计算器中操作；
 * **7**.echarts+openlayers+高德开发接口实现天气预报动态图表；
 * **8**.live2d实现看板娘；
 * **9**.node-cmd用于执行cmd指令；
