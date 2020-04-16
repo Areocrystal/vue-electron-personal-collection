@@ -29,8 +29,8 @@ vue-cli-service lint
 * **3**.vue-aplayer实现左下角音乐播放器；
 * **4**.vue-cropper实现骰子中图片裁剪；
 * **5**.web-worker用于在随机抽人中计算；
-* **6**.date-fns用于在日期计算器中操作；
-* **7**.echarts+openlayers+高德开发接口实现天气预报动态图表；
+* **6**.date-fns用于在日期计算器中配合操作；
+* **7**.echarts+openlayers+高德开发接口实现省市区地图跳转及天气预报动态图表；
 * **8**.live2d实现看板娘；
 * **9**.node-cmd用于执行cmd指令；
 * **10**.eslint+prettier规范统一前端代码风格；
