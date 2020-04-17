@@ -5,7 +5,7 @@
 		leave-active-class="animated hinge"
 	>
 		<el-aside v-show="showAside" :width="isFold ? 'auto' : '200px'">
-			<author :isHide="isFold" />
+			<author />
 			<el-menu
 				:default-active="menuIndex"
 				:collapse="isFold"

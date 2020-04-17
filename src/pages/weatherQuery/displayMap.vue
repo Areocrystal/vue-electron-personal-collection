@@ -1,10 +1,8 @@
 <template>
 	<el-card class="map-card" :body-style="{padding: '7px'}">
-		<div id="map" ref="rootMap" @mousemove="pickLocation">
-			<div class="picker" v-if="initLoc">
-				<h4><i class="el-icon-rank"></i></h4>
-				<p>当前经度：{{ currLoc[0] }}</p>
-				<p>当前纬度：{{ currLoc[1] }}</p>
+		<div id="map" ref="rootMap">
+			<div v-if="initLoc" class="picker" ref="picker">
+				<i class="el-icon-rank"></i>
 			</div>
 		</div>
 	</el-card>
@@ -16,7 +14,7 @@ import {Map, View} from 'ol';
 import Point from 'ol/geom/Point';
 import {Tile as TileLayer, Vector as VectorLayer} from 'ol/layer';
 import Feature from 'ol/Feature';
-import {defaults as defaultControls, ScaleLine} from 'ol/control';
+import {defaults as defaultControls, ScaleLine, FullScreen, MousePosition} from 'ol/control';
 import {Vector as VectorSource} from 'ol/source';
 import {
 	Style as OlStyle,
@@ -26,8 +24,8 @@ import {
 	Icon as OlIcon,
 } from 'ol/style';
 import XYZ from 'ol/source/XYZ';
+import {createStringXY} from 'ol/coordinate';
 import 'ol/ol.css';
-// import rippleEffect from '@/plugin/ripple-effect/RippleEffect.min';
 
 export default {
 	name: 'displayMap',
@@ -50,16 +48,6 @@ export default {
 			map: null,
 			currLoc: [0, 0],
 			vectorLayer: null,
-			customizedDebounce: function (fn, wait) {
-				let timer = null,
-					context = this;
-				return function (ev) {
-					if (timer !== null) {
-						clearTimeout(timer);
-					}
-					timer = setTimeout(() => (context.initLoc = fn.call(context.map, ev)), wait);
-				};
-			},
 			zoomLevel: {
 				province: 9,
 				city: 12,
@@ -111,6 +99,13 @@ export default {
 					new ScaleLine({
 						units: 'degrees',
 					}),
+					new FullScreen(),
+					new MousePosition({
+						coordinateFormat: createStringXY(14),
+						projection: 'EPSG:4326',
+						className: 'picker',
+						target: this.$refs.picker,
+					}),
 				]),
 				layers: [
 					new TileLayer({
@@ -130,9 +125,6 @@ export default {
 			});
 			// rippleEffect(this.$refs.rootMap);
 		},
-		pickLocation($event) {
-			this.customizedDebounce(this.map.getEventCoordinate, 200)($event);
-		},
 		handlerRect(val) {
 			const catercorner = val && val.split(';'),
 				start = catercorner[0].split(','),
@@ -147,25 +139,9 @@ export default {
 					mapTarget = this.map.getView(),
 					{level} = newVal,
 					center = newVal.center.split(',');
-				// const {level} = newVal,
-				// 	center = newVal.center.split(','),
-				// 	{map} = this,
-				// 	arrSource = map.getLayers().array_.map((v) => v.getSource()),
-				// 	arrCoordinate = arrSource.map((v) => v.getFeaturesAtCoordinate);
 				this.currLoc = center;
 				mapTarget.setCenter(center);
 				mapTarget.setZoom(this.zoomLevel[level]);
-				// for (let i = arrCoordinate.length - 1; i >= 0; i--) {
-				// 	let source = arrSource[i];
-				// 	if (source.getFeaturesAtCoordinate && source.getFeaturesAtCoordinate(center).length > 0) {
-				// 		console.log(source, source.getFeaturesAtCoordinate(center));
-				// 		map.getView().fit(source.getFeaturesAtCoordinate(center)[0].getGeometry(), {
-				// 			size: [500, 500],
-				// 			duration: 600,
-				// 		});
-				// 		break;
-				// 	}
-				// }
 				map.removeLayer(this.vectorLayer);
 				this.vectorLayer = this.vectorLayerAnchor();
 				map.addLayer(this.vectorLayer);
@@ -198,19 +174,15 @@ export default {
 
 		.picker {
 			position: absolute;
-			width: 165px;
+			width: 150px;
 			padding: 4px;
-			background-color: rgba(0, 0, 0, 0.4);
+			background-color: rgba(0, 0, 0, 0.3);
 			color: #fff;
 			right: 8px;
-			z-index: 1;
+			bottom: 8px;
+			z-index: 2;
 			text-align: left;
 			border-radius: 4px;
-
-			h4 {
-				margin: 6px 0;
-				text-align: center;
-			}
 
 			p {
 				margin: 6px 0;
