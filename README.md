@@ -32,8 +32,9 @@ vue-cli-service lint
 * **6**.date-fns用于在日期计算器中配合操作；
 * **7**.echarts+openlayers+高德开发接口实现省市区地图跳转及天气预报动态图表；
 * **8**.live2d实现看板娘；
-* **9**.node-cmd用于执行cmd指令；
-* **10**.eslint+prettier规范统一前端代码风格；
+* **9**.node-cmd用于执行cmd指令
+* **10**.animate.css结合自定义指令实现动画交互效果；
+* **11**.eslint+prettier规范统一前端代码风格；
 
 以下是部分截图：
 ![introduction1](https://github.com/Areocrystal/vue-electron-personal-collection/blob/master/introduction/1.PNG "首页")
