@@ -36,7 +36,7 @@ export default {
 						scale: 0.6,
 						jsonPath: 'static/live2dw/live2d-widget-model-nito/assets/nito.model.json',
 					},
-					display: {position: 'right', width: 150, height: 214, hOffset: 10, vOffset: -10},
+					display: {position: 'right', width: 151, height: 214, hOffset: 10, vOffset: -10},
 					mobile: {show: true, scale: 0.3},
 					react: {
 						opacityDefault: 0.7,
