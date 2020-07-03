@@ -19,13 +19,7 @@
 		>
 			<el-form-item label="单元大小" prop="range" class="custom-item bs">
 				<el-tooltip class="item" effect="light" :open-delay="2200" placement="bottom">
-					<el-slider
-						v-model="ruleForm.range"
-						:min="1"
-						:max="33"
-						:marks="marks"
-						show-input=""
-					></el-slider>
+					<el-slider v-model="ruleForm.range" :min="1" :max="33" :marks="marks" show-input="" />
 					<div slot="content">
 						<h3 style="text-align: center; color: #e6a23c;">注意：设置描绘单元大小</h3>
 						<p>这个设置的越小，图像就渲染的越清晰同时渲染速度也越慢(页面卡顿)</p>
@@ -137,7 +131,7 @@
 			:range="ruleForm.range"
 			:type="ruleForm.type"
 			@hasProdImg="toggleDownload"
-		></generate-picture>
+		/>
 	</div>
 </template>
 

@@ -2,7 +2,7 @@
 	<el-card :body-style="wrapperCard" shadow="hover">
 		<el-image class="wave" lazy :src="prodSrc" :preview-src-list="[prodSrc]" style="width: 100%;">
 			<div slot="error" class="image-slot">
-				<i class="el-icon-picture-outline"></i>
+				<i class="el-icon-picture-outline" />
 			</div>
 		</el-image>
 	</el-card>
@@ -170,5 +170,3 @@ export default {
 	},
 };
 </script>
-
-<style scoped></style>

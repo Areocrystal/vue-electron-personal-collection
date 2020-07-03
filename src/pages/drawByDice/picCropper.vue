@@ -20,7 +20,7 @@
 					@realTime="realTime"
 					:fixed="option.fixed"
 					:fixedNumber="fixedNumber"
-				></vueCropper>
+				/>
 			</div>
 			<!-- 预览框 -->
 			<div
@@ -42,13 +42,8 @@
 		<div class="footer-btn">
 			<!-- 缩放旋转按钮 -->
 			<div class="scope-btn">
-				<el-button circle type="primary" icon="el-icon-zoom-in" @click="changeScale(1)"></el-button>
-				<el-button
-					circle
-					type="primary"
-					icon="el-icon-zoom-out"
-					@click="changeScale(-1)"
-				></el-button>
+				<el-button circle type="primary" icon="el-icon-zoom-in" @click="changeScale(1)" />
+				<el-button circle type="primary" icon="el-icon-zoom-out" @click="changeScale(-1)" />
 				<el-button round type="primary" @click.prevent.stop="rotateLeft" size="mini"
 					>逆时针旋转</el-button
 				>

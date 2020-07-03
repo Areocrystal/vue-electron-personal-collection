@@ -43,7 +43,7 @@
 				<i class="el-icon-attract"></i>
 			</el-button>
 		</el-tooltip>
-		<slot name="create"></slot>
+		<slot name="create" />
 		<div class="breadcrumb">
 			<el-breadcrumb separator-class="el-icon-arrow-right">
 				<el-breadcrumb-item v-for="(v, k) in breadcrumbList" :key="k">{{

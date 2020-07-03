@@ -3,9 +3,9 @@
 		<el-avatar
 			style="vertical-align: middle;"
 			src="https://avatars1.githubusercontent.com/u/29609342?s=460&v=4"
-		></el-avatar>
+		/>
 		<span class="avatar-name">Areocrystal</span>
-		<el-divider></el-divider>
+		<el-divider />
 	</div>
 </template>
 
