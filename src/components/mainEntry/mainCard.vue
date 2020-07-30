@@ -10,12 +10,12 @@
 				>
 					<el-image fit="fill" lazy :src="imgSrc" v-cloak>
 						<div slot="error" class="image-slot">
-							<i class="el-icon-picture-outline"></i>
+							<i class="el-icon-picture-outline" />
 						</div>
 					</el-image>
 					<div class="weather-desc" v-cloak>
 						<p>
-							<i class="el-icon-location-information"></i>&nbsp;您当前位于&nbsp;<span
+							<i class="el-icon-location-information" />&nbsp;您当前位于&nbsp;<span
 								class="span-weight"
 								>{{ `${province} ${weatherInfo.city}` }}</span
 							>
@@ -36,7 +36,7 @@
 		<el-row>
 			<el-col :span="24">
 				<el-card :body-style="{padding: '7px', maxHeight: '600px'}" shadow="hover">
-					<el-calendar v-model="dateVal"></el-calendar>
+					<el-calendar v-model="dateVal" />
 				</el-card>
 			</el-col>
 		</el-row>

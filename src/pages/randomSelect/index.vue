@@ -10,10 +10,10 @@
 				style="padding-top: 20px;"
 			>
 				<el-form-item label="总数" prop="numTotal">
-					<el-input v-model.number="gameForm.numTotal" size="small"></el-input>
+					<el-input v-model.number="gameForm.numTotal" size="small" />
 				</el-form-item>
 				<el-form-item label="每排数" prop="numRow">
-					<el-input v-model.number="gameForm.numRow" size="small"></el-input>
+					<el-input v-model.number="gameForm.numRow" size="small" />
 				</el-form-item>
 				<el-form-item label="设置时长" prop="gap">
 					<el-tooltip
@@ -51,7 +51,7 @@
 			@done="changeState"
 			@minusTotal="changeTotal"
 			ref="matrix"
-		></matrixEffect>
+		/>
 	</div>
 </template>
 

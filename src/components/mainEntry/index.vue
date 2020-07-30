@@ -1,14 +1,14 @@
 <template>
 	<baseLayout>
 		<div slot="mainEntry" class="main-wrapper">
-			<top-layout :showBack="false"></top-layout>
+			<top-layout :showBack="false" />
 			<el-row class="famous-row">
 				<el-col :span="24">
 					<vue-transform-effect
 						v-show="showEffect"
 						style="width: 60%; height: 120px; z-index: 0;"
 						:baseSize="10"
-					></vue-transform-effect>
+					/>
 					<el-card shadow="hover">
 						<p>
 							<font-awesome-icon icon="book" class="icon" />&nbsp;<span class="famous-text">{{
@@ -31,7 +31,7 @@
 					</el-card>
 				</el-col>
 			</el-row>
-			<main-card ref="cardCom"></main-card>
+			<main-card ref="cardCom" />
 		</div>
 	</baseLayout>
 </template>
